@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(232, 227, 240);
+    /*background-image: url(img/christmas.jpg);*/
+
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+        url(img/christmas.jpg);
+    border-radius: 16px;
+    background-size: cover;
+}
+.text-cut{
+    background-color: white;
+    padding: 12px;
+    mix-blend-mode: screen;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}

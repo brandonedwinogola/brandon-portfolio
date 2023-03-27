@@ -80,3 +80,22 @@ function handleSubmit(event) {
 
 const year = document.querySelector('.year');
 year.innerHTML = new Date().getFullYear();
+
+
+// CV
+document.getElementById("download-btn").addEventListener("click", downloadCV);
+
+
+function downloadCV() {
+    // Replace the file URL below with the URL of your CV file
+    const fileUrl = "https://1drv.ms/w/s!AmWFN8fGWZBdpnYMqeQpgJoxobe9?e=tgh5aE";
+  
+    // Create a temporary anchor element to trigger the download
+    const downloadLink = document.createElement("a");
+    downloadLink.href = fileUrl;
+    downloadLink.download = "CV.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  }
+  
